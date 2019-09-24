@@ -1,6 +1,6 @@
 import React from 'react';
-import './styles/styles.css'
 import TeamLink from './TeamLink';
+import './styles/teamsBar.scss';
 
 const TeamsBar = () => {
 
@@ -113,8 +113,8 @@ const TeamsBar = () => {
 
     return (
 
-        <div className="container-fluid" style={{backgroundColor:'#eeeeee'}}>
-            <div className="container p-1" style={{backgroundColor:'#eeeeee', display:'flex'}}>
+        <div className="container-fluid teamsBar">
+            <div className="container p-1 teamsContainer" >
                 { teamsList() }
             </div>
         </div>

@@ -1,0 +1,34 @@
+
+.rightSection {
+    justify-content: space-between;
+    .country {
+        font-size: 14px;
+        border: 2px solid rgba(204, 204, 204, .3);
+    }
+    
+    .login {
+        color: #DA1C1C;
+        font-size: 14px;
+        font-weight: 500;
+        border: 2px solid rgba(204, 204, 204, .3);
+    }
+    
+    .suscription {
+        background-color: #DA1C1C;
+        font-size: 14px;
+        font-weight: 500;
+    }
+    
+    .suscription:hover {
+        background-color: black; 
+    }
+} 
+
+.leftSection {
+    font-size: 12px; 
+    .section {
+        border-right: 1px solid #E8E8E7;
+    }
+}
+
+
