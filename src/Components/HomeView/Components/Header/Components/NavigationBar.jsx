@@ -10,11 +10,12 @@ const items = [
 ]
 
 const renderItems = () => (
-    items.map((item, i) =><NavigationItem name={item} />)
+    items.map((item, i) =><NavigationItem key={i} name={item} />)
 );
 
-const NavigationBar = ({ top,scroll }) => (
-    !top ? 
+const NavigationBar = ({ top,scroll }) => {
+    console.log(scroll);
+    return !top ? 
         <div className="fixed-top">
             <nav className="navbar navbar-expand-lg navbar-light bg-light py-0">
                 <a className="navbar-brand girar" href="#">
@@ -37,11 +38,11 @@ const NavigationBar = ({ top,scroll }) => (
                 <ul className="navbar-nav mr-auto">
                     {renderItems()}
                     <li className="nav-item girar px-3" style={{backgroundColor:'#C01111'}}>
-                        <ol class="breadcrumb my-0" style={{backgroundColor:'#C01111'}}>
-                            <li className="mr-2"><i class="fas fa-hashtag" style={{fontSize:20, color: '#910707', display:'inline-block'}}></i></li>
-                            <li class="breadcrumb-item mr-2"><a className="text-white" href="#">Videos</a></li>
-                            <li class="breadcrumb-item mr-2"><a className="text-white" href="#">Última hora</a></li>
-                            <li class="breadcrumb-item"><a className="text-white" href="#">eSports</a></li>
+                        <ol className="breadcrumb my-0" style={{backgroundColor:'#C01111'}}>
+                            <li className="mr-2"><i className="fas fa-hashtag" style={{fontSize:20, color: '#910707', display:'inline-block'}}></i></li>
+                            <li className="breadcrumb-item mr-2"><a className="text-white" href="#">Videos</a></li>
+                            <li className="breadcrumb-item mr-2"><a className="text-white" href="#">Última hora</a></li>
+                            <li className="breadcrumb-item"><a className="text-white" href="#">eSports</a></li>
                         </ol>
                     </li>
                     <li className="nav-item mx-sm-2 mx-3">
@@ -53,7 +54,7 @@ const NavigationBar = ({ top,scroll }) => (
                 </form>
             </div>
         </nav>
-);
+};
 
 export default NavigationBar;
 

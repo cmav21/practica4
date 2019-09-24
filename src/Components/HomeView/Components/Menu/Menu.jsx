@@ -37,7 +37,7 @@ const Menu = () => {
     return (
         <div className="container mt-4">
             <div className="row">
-                <div className="col-12 col-md-8 mb-sm-3">
+                <div className="col-12 col-lg-8 mb-sm-3">
                     <div className="bd-example mb-1">
                         <div id="carouselExampleCaptions" className="carousel slide" data-ride="carousel">
                             <div className="carousel-inner">
@@ -53,7 +53,7 @@ const Menu = () => {
                     </div>
                     <p className="mt-2 borderBottomNews commentsPerCard card-body px-2 py-1">Comentarios<i className="fas fa-comment-alt"></i></p>
                 </div>
-                <div className="col-12 col-md-4">
+                <div className="col-12 col-lg-4">
                     {renderMenuNews()}
                 </div>
             </div>

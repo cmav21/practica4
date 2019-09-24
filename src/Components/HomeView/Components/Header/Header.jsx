@@ -16,7 +16,7 @@ class Header extends Component {
             if(isTop !== this.state.top){
                 this.setState({ top:isTop })
             }
-            this.setState({ scroll: window.scrollY})
+            this.setState({ scroll: window.scrollY })
         });
     }
 
